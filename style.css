@@ -1,0 +1,141 @@
+body{
+  margin: 0;
+  height: 100dvh;
+  width: 100vw;
+  font-family: 'Arial';
+  background-image: url(backgroundimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+button, input{
+  cursor: pointer;
+}
+header{
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.8);
+}
+nav{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  padding-left: 3vw;
+  border-bottom: solid;
+  border-color: rgb(223, 64, 6);;
+  border-width: 0.4px;
+  box-shadow: inset 1px 1px 4px rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(80deg,rgb(21, 21, 21), rgba(32, 30, 27, 0.875));
+  color: rgb(240, 64, 0);
+}
+#companyname{
+  font-family: 'Consolas';
+}
+#navsection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 3vw;
+}
+#homebutton{
+  font-size: 17px;
+  padding: 8px 14px;
+  margin-right: 3vw;
+  margin-bottom: 2px;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #ceb6b6;
+  color: #ebdbdb;
+  transition: all 0.15s;
+}
+#homebutton:hover{
+  font-size: 19px;
+  padding: 7px 11px;
+  color: rgb(255, 68, 0);
+  border-color: rgb(240, 64, 0);
+}
+#menuicon{
+  height: 2.2em;
+}
+#menubutton{
+  background-color: transparent;
+  border: none;
+  transition: all 0.15s;
+}
+#menubutton:hover{
+  scale: 1.2;
+}
+#menubutton:focus ~ aside{
+  top: 0px;
+}
+aside{
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ebdbdb;
+  width: 140px;
+  height: 40dvh;
+  top: -50dvh;
+  right: 0px;
+  transition: all 0.5s;
+}
+aside p{
+  margin-bottom: 1dvh;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+}
+#formcontainer{
+  box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.8);
+}
+#form{
+  color: #ebdbdb;
+  font-size: 22px;
+  height: 422px;
+  width: 50vw;
+  max-width: 370px;
+  min-width: 310px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  background-image: linear-gradient(1deg,rgb(21, 21, 21), rgba(32, 30, 27, 0.9));
+  box-shadow: inset 7px 11px 10px rgba(255, 255, 255, 0.1);
+}
+form h1{
+  margin-right: 2px;
+}
+input{
+  background-color: transparent;
+  padding: 11px 30px;
+  border-style: solid;
+  color: #ebdbdb;
+  border-color: rgb(188, 58, 11);
+  border-radius: 4px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#submit{
+  color: #ebdbdb;
+  border-style: solid;
+  font-weight: 700;
+  padding: 11px 30px;
+  border-color: #201b1b;
+  border-radius: 4px;
+  background-image: linear-gradient(11deg,rgb(246, 4, 4), rgba(54, 34, 20));
+  transition: all 0.15s;
+}
+#submit:hover{
+  background-image: linear-gradient(180deg, rgb(208, 17, 17));
+  box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.8);
+  scale: 1.2;
+}
